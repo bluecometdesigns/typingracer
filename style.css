@@ -1,0 +1,57 @@
+@import url('//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css');
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:300:700:200:500');
+
+* {
+ font-family: 'Open Sans';   
+}
+
+.text-box-container {
+    height: 200px;
+    background-color: white;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #c3c3c3;
+    position: relative;
+    overflow: hidden;
+}
+
+#inner-text {
+    line-height: 60px;
+    transition: 0.5s top ease;
+    overflow: auto;
+    position: relative;
+    height: 200px;
+}
+#inner-text span {
+    font-size: 1.8em;
+    font-weight: 700;
+    padding: 5px;
+    box-sizing: border-box;
+    position: relative;
+}
+#inner-text span.user {
+    border-bottom: 2px dashed #6fb2ff;
+}
+#inner-text span.user:before {
+    content: attr('data-id');
+    position: absolute;
+    top: -20px;
+    width: 100%;
+    left: 0;
+    text-align: center;
+}
+#inner-text span.user.missed {
+    
+}
+#inner-text span.user.passed {
+    
+}
+#inner-text span.highlight {
+    background: silver;
+    border-radius: 5px;
+}
+#inner-text span.missed {
+    color: #fd4747;
+}
+#inner-text span.passed {
+    color: forestgreen;
+}
