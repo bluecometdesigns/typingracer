@@ -13,7 +13,7 @@ for(var i = 0; i < length; i++) {
 text_box.find('span:first').addClass('highlight');
 var space_counter = 0;
 var error = false;
-var k = null;
+var k = null; 
 
 $('#text-input').on('keydown', function(e){
     var w = e.keyCode || e.charCode;
